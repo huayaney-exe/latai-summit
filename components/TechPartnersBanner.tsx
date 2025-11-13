@@ -42,23 +42,20 @@ export default function TechPartnersBanner() {
   return (
     <section
       className="relative w-full overflow-hidden py-20"
+      style={{
+        clipPath: 'ellipse(100% 100% at 50% 50%)',
+        background: 'linear-gradient(to right, #0f172a, #312e81, #0f172a)',
+      }}
       aria-label="Technology Partners"
       role="region"
     >
-      {/* Background Gradient Layer - Clean, no mesh pattern */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900"></div>
-
-      {/* Subtle Depth Layer - Optional glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent"></div>
-
-      {/* Top Organic Divider - Curved transition */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-slate-950 to-transparent transform -skew-y-2 origin-top-left"></div>
-
-      {/* Bottom Organic Divider - Curved transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-950 to-transparent transform skew-y-2 origin-bottom-right"></div>
-
-      {/* Floating Shape for Visual Interest */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-indigo-500/10 to-violet-600/10 rounded-full blur-3xl pointer-events-none"></div>
+      {/* Organic depth via radial gradient - efficient, no blur */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse 120% 60% at 50% -10%, transparent 40%, rgba(99, 102, 241, 0.05) 100%)',
+        }}
+      />
 
       {/* Content Layer */}
       <div className="relative z-10">
@@ -71,7 +68,7 @@ export default function TechPartnersBanner() {
           </span>
         </div>
 
-        {/* Gradient fade edges - Adjusted for new background */}
+        {/* Gradient fade edges - Essential for scroll masking */}
         <div className="absolute left-0 top-0 bottom-0 w-24 md:w-32 bg-gradient-to-r from-slate-900 to-transparent z-20 pointer-events-none"></div>
         <div className="absolute right-0 top-0 bottom-0 w-24 md:w-32 bg-gradient-to-l from-slate-900 to-transparent z-20 pointer-events-none"></div>
 

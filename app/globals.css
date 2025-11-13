@@ -5,10 +5,11 @@
   --background: #0a0f1e;
   --foreground: #ffffff;
 
-  /* Distinctive Brand Colors - Orange/Navy Theme */
-  --brand-primary: #FF6B35;      /* Vibrant Orange */
-  --brand-secondary: #1E3A8A;    /* Deep Navy */
-  --brand-accent: #F59E0B;       /* Amber */
+  /* Premium Brand Colors - Deep Indigo/Gold Theme */
+  --brand-primary: #6366F1;      /* Rich Indigo */
+  --brand-secondary: #312E81;    /* Deep Purple */
+  --brand-accent: #A78BFA;       /* Soft Violet */
+  --brand-gold: #FCD34D;         /* Refined Gold */
   --brand-dark: #0a0f1e;         /* Deep Blue-Black */
   --brand-light: #F1F5F9;        /* Light Gray */
 }
@@ -107,8 +108,8 @@ body {
 /* Geometric Pattern Utilities */
 .geometric-pattern {
   background-image:
-    linear-gradient(45deg, transparent 48%, rgba(255, 107, 53, 0.05) 48%, rgba(255, 107, 53, 0.05) 52%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, rgba(30, 58, 138, 0.05) 48%, rgba(30, 58, 138, 0.05) 52%, transparent 52%);
+    linear-gradient(45deg, transparent 48%, rgba(99, 102, 241, 0.03) 48%, rgba(99, 102, 241, 0.03) 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(167, 139, 250, 0.03) 48%, rgba(167, 139, 250, 0.03) 52%, transparent 52%);
   background-size: 40px 40px;
 }
 

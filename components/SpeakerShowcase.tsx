@@ -100,8 +100,8 @@ export default function SpeakerShowcase() {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Conoce a los expertos que están liderando la revolución de IA en América Latina
           </p>
-          <div className="mt-4 inline-block bg-gradient-to-r from-orange-600/20 to-amber-600/20 backdrop-blur-sm border border-orange-500/30 rounded-lg px-6 py-2">
-            <p className="text-orange-300 font-medium">
+          <div className="mt-4 inline-block bg-gradient-to-r from-indigo-600/20 to-violet-600/20 backdrop-blur-sm border border-indigo-500/30 rounded-lg px-6 py-2">
+            <p className="text-violet-300 font-medium">
               60% Speakers Peruanos | 30% LATAM | 10% Internacional
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function SpeakerShowcase() {
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden transform transition hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20 cursor-pointer border border-slate-700 hover:border-orange-500/50"
+              className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden transform transition hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/20 cursor-pointer border border-slate-700 hover:border-indigo-500/50"
               onClick={() => setSelectedSpeaker(index)}
             >
               {/* Speaker Image */}
@@ -133,17 +133,17 @@ export default function SpeakerShowcase() {
               {/* Speaker Info */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-1 font-display">{speaker.name}</h3>
-                <p className="text-orange-400 text-sm font-semibold mb-1">{speaker.title}</p>
+                <p className="text-violet-400 text-sm font-semibold mb-1">{speaker.title}</p>
                 <p className="text-gray-400 text-sm mb-4">{speaker.company}</p>
 
                 {/* Topic */}
-                <div className="bg-gradient-to-r from-orange-600/10 to-amber-600/10 border border-orange-500/20 rounded-lg p-3 mt-4">
+                <div className="bg-gradient-to-r from-indigo-600/10 to-violet-600/10 border border-indigo-500/20 rounded-lg p-3 mt-4">
                   <p className="text-xs text-gray-400 mb-1">Sesión:</p>
                   <p className="text-sm text-white font-medium">{speaker.topic}</p>
                 </div>
 
                 {/* View Bio Button */}
-                <button className="w-full mt-4 py-2 bg-gradient-to-r from-orange-600/30 to-amber-600/30 hover:from-orange-600/50 hover:to-amber-600/50 border border-orange-500/30 text-orange-300 rounded-lg text-sm font-semibold transition">
+                <button className="w-full mt-4 py-2 bg-gradient-to-r from-indigo-600/30 to-violet-600/30 hover:from-indigo-600/50 hover:to-violet-600/50 border border-indigo-500/30 text-violet-300 rounded-lg text-sm font-semibold transition">
                   Ver Biografía Completa
                 </button>
               </div>
@@ -158,7 +158,7 @@ export default function SpeakerShowcase() {
             onClick={() => setSelectedSpeaker(null)}
           >
             <div
-              className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-orange-500/30"
+              className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden max-w-3xl w-full max-h-[90vh] overflow-y-auto border border-indigo-500/30"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Image */}
@@ -184,7 +184,7 @@ export default function SpeakerShowcase() {
                 <div className="flex items-start gap-4 mb-6">
                   <div className="flex-1">
                     <h3 className="text-3xl font-bold text-white mb-2 font-display">{speakers[selectedSpeaker].name}</h3>
-                    <p className="text-orange-400 text-lg font-semibold mb-1">{speakers[selectedSpeaker].title}</p>
+                    <p className="text-violet-400 text-lg font-semibold mb-1">{speakers[selectedSpeaker].title}</p>
                     <p className="text-gray-300 mb-2">{speakers[selectedSpeaker].company}</p>
                     <div className="inline-flex items-center gap-1 bg-slate-800 rounded-full px-3 py-1">
                       <span className="text-sm">{speakers[selectedSpeaker].countryFlag}</span>
@@ -193,8 +193,8 @@ export default function SpeakerShowcase() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-orange-600/20 to-amber-600/20 border border-orange-500/30 rounded-lg p-4 mb-6">
-                  <p className="text-sm text-orange-300 mb-2 font-medium">Sesión:</p>
+                <div className="bg-gradient-to-r from-indigo-600/20 to-violet-600/20 border border-indigo-500/30 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-violet-300 mb-2 font-medium">Sesión:</p>
                   <p className="text-xl text-white font-semibold">{speakers[selectedSpeaker].topic}</p>
                 </div>
 
@@ -207,7 +207,7 @@ export default function SpeakerShowcase() {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-4">¿Quieres ser parte del panel de speakers?</p>
-          <button className="px-8 py-3 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold rounded-lg shadow-lg shadow-orange-500/20 transition">
+          <button className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold rounded-lg shadow-lg shadow-indigo-500/20 transition">
             Postula como Speaker
           </button>
         </div>

@@ -18,7 +18,7 @@ const pricingTiers = [
       'Grupo exclusivo de WhatsApp'
     ],
     cta: 'Asegurar Spot',
-    bgColor: 'from-orange-600 to-amber-700',
+    bgColor: 'from-violet-600 to-purple-700',
     remaining: 12
   },
   {
@@ -38,7 +38,7 @@ const pricingTiers = [
       'Grupo exclusivo de WhatsApp'
     ],
     cta: 'Mejor Valor',
-    bgColor: 'from-orange-500 to-amber-600',
+    bgColor: 'from-indigo-600 to-violet-600',
     remaining: 45
   },
   {

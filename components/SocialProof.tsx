@@ -39,8 +39,8 @@ export default function SocialProof() {
             const Icon = stat.Icon
             return (
               <div key={index} className="text-center group transform transition hover:scale-105">
-                <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-gradient-to-br from-orange-500/20 to-amber-600/20 border border-orange-500/30 group-hover:border-orange-500/60 transition-all">
-                  <Icon className="w-8 h-8 text-orange-500" />
+                <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-600/20 border border-indigo-500/30 group-hover:border-indigo-500/60 transition-all">
+                  <Icon className="w-8 h-8 text-indigo-500" />
                 </div>
                 <div className="text-4xl md:text-5xl font-black text-white mb-2 font-display">
                   {stat.number}
@@ -90,7 +90,7 @@ export default function SocialProof() {
             <span className="text-sm font-medium">Reembolso 100% hasta 30 días antes</span>
           </div>
           <div className="flex items-center gap-2 text-gray-400 group">
-            <AcademicCapIcon className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform" />
+            <AcademicCapIcon className="w-6 h-6 text-indigo-500 group-hover:scale-110 transition-transform" />
             <span className="text-sm font-medium">Certificado de Asistencia Incluido</span>
           </div>
         </div>

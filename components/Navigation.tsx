@@ -54,17 +54,17 @@ export default function Navigation() {
                 {/* Geometric Logo */}
                 <div className="w-12 h-12 relative">
                   {/* Orange Triangle */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-amber-600 transform rotate-45 rounded-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-violet-600 transform rotate-45 rounded-sm"></div>
                   {/* Navy Accent */}
                   <div className="absolute inset-2 bg-blue-900 transform rotate-45 rounded-sm"></div>
                   {/* Center Dot */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
                   </div>
                 </div>
               </div>
               <div className="font-display">
-                <div className="text-2xl font-bold text-white group-hover:text-orange-500 transition-colors">
+                <div className="text-2xl font-bold text-white group-hover:text-indigo-500 transition-colors">
                   LATAI
                 </div>
                 <div className="text-xs text-gray-400 -mt-1">Summit 2025</div>
@@ -77,15 +77,15 @@ export default function Navigation() {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-gray-300 hover:text-orange-500 font-medium transition-colors relative group"
+                  className="text-gray-300 hover:text-indigo-500 font-medium transition-colors relative group"
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-500 group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection('#pricing')}
-                className="px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-105"
+                className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105"
               >
                 Obtener Tickets
               </button>
@@ -118,14 +118,14 @@ export default function Navigation() {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="block w-full text-left px-4 py-3 text-gray-300 hover:text-orange-500 hover:bg-white/5 rounded-lg transition-colors font-medium"
+                  className="block w-full text-left px-4 py-3 text-gray-300 hover:text-indigo-500 hover:bg-white/5 rounded-lg transition-colors font-medium"
                 >
                   {link.name}
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection('#pricing')}
-                className="block w-full px-4 py-3 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-orange-500/25"
+                className="block w-full px-4 py-3 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-indigo-500/25"
               >
                 Obtener Tickets
               </button>

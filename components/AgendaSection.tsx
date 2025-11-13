@@ -38,12 +38,12 @@ const agendaData = {
 }
 
 const tracks = [
-  { name: 'Main Stage', color: 'bg-orange-600', textColor: 'text-orange-300' },
-  { name: 'Fintech', color: 'bg-amber-600', textColor: 'text-amber-300' },
+  { name: 'Main Stage', color: 'bg-indigo-600', textColor: 'text-violet-300' },
+  { name: 'Fintech', color: 'bg-violet-600', textColor: 'text-violet-300' },
   { name: 'Technical', color: 'bg-blue-600', textColor: 'text-blue-300' },
   { name: 'Workshop A', color: 'bg-green-600', textColor: 'text-green-300' },
   { name: 'Workshop B', color: 'bg-yellow-600', textColor: 'text-yellow-300' },
-  { name: 'Startup', color: 'bg-orange-500', textColor: 'text-orange-300' },
+  { name: 'Startup', color: 'bg-indigo-500', textColor: 'text-violet-300' },
   { name: 'Ethics', color: 'bg-indigo-600', textColor: 'text-indigo-300' },
   { name: 'General', color: 'bg-gray-600', textColor: 'text-gray-400' }
 ]
@@ -77,7 +77,7 @@ export default function AgendaSection() {
             onClick={() => setActiveTab('day1')}
             className={`px-8 py-3 rounded-lg font-semibold transition ${
               activeTab === 'day1'
-                ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white'
+                ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white'
                 : 'bg-white/10 text-gray-400 hover:bg-white/20'
             }`}
           >
@@ -87,7 +87,7 @@ export default function AgendaSection() {
             onClick={() => setActiveTab('day2')}
             className={`px-8 py-3 rounded-lg font-semibold transition ${
               activeTab === 'day2'
-                ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white'
+                ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white'
                 : 'bg-white/10 text-gray-400 hover:bg-white/20'
             }`}
           >

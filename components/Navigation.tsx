@@ -49,22 +49,16 @@ export default function Navigation() {
             {/* Logo */}
             <button
               onClick={() => scrollToSection('#')}
-              className="flex items-center gap-3 group"
+              className="relative group"
             >
-              <div className="relative w-12 h-12">
+              <div className="relative h-12 w-40">
                 <Image
                   src="/assets/latai-logo.png"
-                  alt="LATAI Summit Logo"
+                  alt="LATAI Summit"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left transition-opacity group-hover:opacity-80"
                   priority
                 />
-              </div>
-              <div className="font-display">
-                <div className="text-2xl font-bold text-white group-hover:text-indigo-500 transition-colors">
-                  LATAI
-                </div>
-                <div className="text-xs text-gray-400 -mt-1">Summit 2025</div>
               </div>
             </button>
 

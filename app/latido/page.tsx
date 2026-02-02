@@ -23,7 +23,6 @@ export default function LatidoPage() {
     <main className="bg-[var(--lat-bk)] text-[var(--lat-wh)] font-[family-name:var(--lat-font-body)] overflow-x-hidden -webkit-font-smoothing-antialiased">
       <Navigation />
       <HeroLAT />
-      <Divider variant="dot" />
       <ManifestoSection />
       <StatsSection />
       <PosterSection />
